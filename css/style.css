@@ -1,0 +1,159 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* VARIABLES */
+:root {
+  --FF-RALEWAY: "Raleway", sans-serif;
+  --FF-INTER: "Inter", sans-serif;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+.green {
+  color: #1dd100;
+}
+
+.description {
+  color: #fff;
+  font-family: var(--FF-INTER);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+img {
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:any-link {
+  color: black;
+}
+
+/* HEADER STYLES */
+.header {
+  font-family: var(--FF-RALEWAY);
+  margin: 1.5rem 8rem 8rem;
+}
+
+.header h3 {
+  color: #030712;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 3.5rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav a {
+  color: #030712b3;
+}
+
+.nav div {
+  border: 1px solid #1dd10066;
+  background-color: #1dd1001a;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1dd100;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.banner {
+  border: 1px solid rebeccapurple;
+  margin-top: 3rem;
+  padding: 4.5rem 0 8rem;
+  text-align: center;
+  background-image: linear-gradient(to right, #03071280, #03071200),
+    url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 2rem;
+  /* position: relative; */
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 86px;
+}
+
+.banner > p {
+  margin: 2rem 0;
+}
+
+.btn-buy-ticket {
+  background: #1dd100;
+  padding: 21px 30px;
+  border: 0;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.statistics {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.statistics > div {
+  background-color: #fff;
+  width: 308px;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+
+  display: flex;
+  gap: 1rem;
+  text-align: start;
+  border-bottom: 3px solid #1dd100;
+
+  position: relative;
+  bottom: -190px;
+}
+
+.statistics h3 {
+  color: #030712;
+  font-family: var(--FF-INTER);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
