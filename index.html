@@ -142,13 +142,190 @@
             </div>
 
             <!-- bus seats -->
-            <section style="margin-top: 1.5rem;background: white;">
-                h
+            <section class="seat-info">
+                <div class="seat-info__container1">
+                    <h3>Select Your Seat</h3>
+                    <div class="availability">
+                        <div>
+                            <img src="images/seat-gray.png" alt="Seat">
+                            <p class="available">Available</p>
+                        </div>
+                        <div>
+                            <img src="images/seat-green-filled.png" alt="Seat">
+                            <p class="selected">Selected</p>
+                        </div>
+                    </div>
+                    <div class="steering-wheel">
+                        <img src="images/steering-wheel.svg" alt="Steering Wheel">
+                    </div>
+                    <div class="seat-container">
+                        <div>
+                            <div>
+                                <div class="row">A</div>
+                                <div class="seat">A1</div>
+                                <div class="seat">A2</div>
+                            </div>
+                            <div>
+                                <div class="row">B</div>
+                                <div class="seat">B1</div>
+                                <div class="seat">B2</div>
+                            </div>
+                            <div>
+                                <div class="row">C</div>
+                                <div class="seat">C1</div>
+                                <div class="seat">C2</div>
+                            </div>
+                            <div>
+                                <div class="row">D</div>
+                                <div class="seat">D1</div>
+                                <div class="seat">D2</div>
+                            </div>
+                            <div>
+                                <div class="row">E</div>
+                                <div class="seat">E1</div>
+                                <div class="seat">E2</div>
+                            </div>
+                            <div>
+                                <div class="row">F</div>
+                                <div class="seat">F1</div>
+                                <div class="seat">F2</div>
+                            </div>
+                            <div>
+                                <div class="row">G</div>
+                                <div class="seat">G1</div>
+                                <div class="seat">G2</div>
+                            </div>
+                            <div>
+                                <div class="row">H</div>
+                                <div class="seat">H1</div>
+                                <div class="seat">H2</div>
+                            </div>
+                            <div>
+                                <div class="row">I</div>
+                                <div class="seat">I1</div>
+                                <div class="seat">I2</div>
+                            </div>
+                            <div>
+                                <div class="row">J</div>
+                                <div class="seat">J1</div>
+                                <div class="seat">J2</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="seat">A3</div>
+                                <div class="seat">A4</div>
+                            </div>
+                            <div>
+                                <div class="seat">B3</div>
+                                <div class="seat">B4</div>
+                            </div>
+                            <div>
+                                <div class="seat">C3</div>
+                                <div class="seat">C4</div>
+                            </div>
+                            <div>
+                                <div class="seat">D3</div>
+                                <div class="seat">D4</div>
+                            </div>
+                            <div>
+                                <div class="seat">E3</div>
+                                <div class="seat">E4</div>
+                            </div>
+                            <div>
+                                <div class="seat">F3</div>
+                                <div class="seat">F4</div>
+                            </div>
+                            <div>
+                                <div class="seat">G3</div>
+                                <div class="seat">G4</div>
+                            </div>
+                            <div>
+                                <div class="seat">H3</div>
+                                <div class="seat">H4</div>
+                            </div>
+                            <div>
+                                <div class="seat">I3</div>
+                                <div class="seat">I4</div>
+                            </div>
+                            <div>
+                                <div class="seat">J3</div>
+                                <div class="seat">J4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seat-info__container2">
+                    <h3>Select Your Seat</h3>
+                    <div class="card">
+                        <div class="seat-type">
+                            <p>Seat <span></span></p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                        <div class="price-total">
+                            <p>Total Price</p>
+                            <p>BDT <span></span></p>
+                        </div>
+                        <div class="coupon-field">
+                            <input type="text" name="coupon-code" id="coupon-code" placeholder="Have any coupon?">
+                            <button>Apply</button>
+                        </div>
+                        <div class="grand-total">
+                            <p>Grand Total</p>
+                            <p>BDT <span></span></p>
+                        </div>
+                    </div>
+
+                    <form class="form" action="" method="">
+                        <p>
+                            <label class="label" for="name">Passenger Name*</label> <br>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </p>
+                        <p>
+                            <label class="label" for="phone-num">Phone Number*</label> <br>
+                            <input type="tel" name="phone-num" id="phone-num" placeholder="Enter your phone number"
+                                required>
+                        </p>
+                        <p>
+                            <label class="label" for="email">Email Id*</label> <br>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </p>
+                        <button class="btn-submit">Next</button>
+                    </form>
+                    <div class="terms-conditions">
+                        <a class="terms" href="">Terms and Conditions</a><a href="">Cancellation policy</a>
+                    </div>
+                </div>
             </section>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="play-store">
+            <div>
+                <h2>P-Ticket</h2>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div>
+                <p class="download">Download our app</p>
+                <div>
+                    <img src="images/playstore.svg" alt="Play store">
+                </div>
+            </div>
+        </div>
+        <div class="footer-con2">
+            <div>
+                <p>
+                    @all rights reserved, P-Ticket services limited.2024
+                </p>
+            </div>
+            <div class="refund">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
     </footer>
 </body>
 

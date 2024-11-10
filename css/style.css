@@ -255,12 +255,12 @@ main {
 
 /* ticket info */
 .ticket-info {
-  border: 1px solid rebeccapurple;
   /* border-top: 2px solid #1dd100; */
   margin-top: 5rem;
-  padding: 5rem 5rem 0;
+  padding: 5rem 5rem;
   background-color: #f7f8f8;
   border-radius: 5rem 5rem 0 0;
+  border-top: 2px solid #1dd100;
 }
 
 .ticket-info-title {
@@ -385,4 +385,227 @@ main {
   font-weight: 600;
   line-height: 40px;
   opacity: 0.6;
+}
+
+/* seat info */
+.seat-info {
+  margin-top: 1.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  /* gap: 1rem; */
+}
+
+.seat-info h3 {
+  font-family: var(--FF-RALEWAY);
+  font-size: 1.5rem;
+}
+
+.availability {
+  border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-family: var(--FF-INTER);
+}
+
+.availability > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.available {
+  opacity: 0.6;
+}
+
+.availability .selected {
+  color: #1dd100;
+}
+
+.steering-wheel {
+  /* border: 1px solid; */
+  /* text-align: end; */
+  width: 110px;
+  height: 56px;
+  background: #f0f8f8;
+  border-radius: 0.75rem;
+  display: grid;
+  place-content: center;
+  margin: 1rem 0 1rem auto;
+}
+
+.seat-info > div:first-child {
+  /* border: 1px solid rebeccapurple; */
+  width: 60%;
+  padding-right: 2rem;
+  border-right: 2px dashed lightgray;
+}
+.seat-info > div:last-child {
+  /* border: 1px solid rebeccapurple; */
+  width: 40%;
+  padding-left: 2rem;
+}
+
+.seat-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--FF-INTER);
+}
+
+.seat-container > div > div {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.seat-container .seat {
+  background-color: #f0f8f8;
+  width: 110px;
+  height: 56px;
+  display: grid;
+  place-content: center;
+  border-radius: 0.75rem;
+  opacity: 0.6;
+}
+
+.seat-container .row {
+  display: grid;
+  place-content: center;
+  opacity: 0.6;
+}
+
+/* seat info container 2 */
+.seat-info__container2 {
+  font-family: var(--FF-INTER);
+}
+
+.seat-info__container2 h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed lightgray;
+}
+
+.card {
+  background: #f7f8f8;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.seat-type,
+.price-total,
+.grand-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-total {
+  border-top: 1px dashed lightgray;
+  padding-top: 1rem;
+}
+
+.seat-type {
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed lightgray;
+  margin-bottom: 1rem;
+}
+
+.coupon-field {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+}
+
+.coupon-field input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.coupon-field button {
+  border: none;
+  background: #1dd100;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form input {
+  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 0.75rem;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn-submit {
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  background: #1dd100;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
+.terms-conditions {
+  margin-top: 3rem;
+}
+
+.terms-conditions a {
+  text-decoration: underline;
+}
+
+.terms {
+  margin-right: 2rem;
+}
+
+/* FOOTER */
+.footer {
+  width: 1170px;
+  margin: 0 auto;
+  background: #030712;
+  color: #fff;
+  font-family: var(--FF-RALEWAY);
+  padding: 6rem;
+}
+
+.play-store {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed gray;
+  padding-bottom: 3rem;
+}
+
+.play-store h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.download {
+  margin-bottom: 1rem;
+}
+
+.footer-con2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.refund {
+  display: flex;
+  gap: 2rem;
 }
