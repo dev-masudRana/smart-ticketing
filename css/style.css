@@ -18,8 +18,9 @@
 
 /* GENERAL STYLES */
 body {
-  max-width: 100%;
+  max-width: 1440px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 li {
@@ -48,6 +49,10 @@ a {
 
 a:any-link {
   color: black;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* HEADER STYLES */
@@ -93,9 +98,9 @@ a:any-link {
 }
 
 .banner {
-  border: 1px solid rebeccapurple;
+  height: 550px;
   margin-top: 3rem;
-  padding: 4.5rem 0 8rem;
+  padding: 4rem 0 8rem;
   text-align: center;
   background-image: linear-gradient(to right, #03071280, #03071200),
     url("../images/banner.png");
@@ -103,7 +108,6 @@ a:any-link {
   background-size: contain;
   background-position: center;
   border-radius: 2rem;
-  /* position: relative; */
 }
 
 .banner-title {
@@ -127,7 +131,7 @@ a:any-link {
 }
 
 .statistics {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -147,7 +151,7 @@ a:any-link {
   border-bottom: 3px solid #1dd100;
 
   position: relative;
-  bottom: -190px;
+  bottom: -60px;
 }
 
 .statistics h3 {
@@ -156,4 +160,85 @@ a:any-link {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
+}
+
+/* MAIN SECTION STYLES */
+/* offer */
+main {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.offer {
+  margin-top: 10rem;
+  text-align: center;
+  font-family: var(--FF-RALEWAY);
+}
+
+.offer__title {
+  color: #030712;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.offer__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 3rem 0 4rem;
+}
+
+.offer__container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 3.25rem;
+  border-radius: 1.5rem;
+  text-align: start;
+}
+
+.offer__container > div:first-child {
+  background-color: #ffbf0f;
+}
+.offer__container > div:last-child {
+  background-color: #f78c9c;
+}
+
+.offer .discount {
+  font-family: var(--FF-INTER);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.25rem;
+}
+
+.offer .next-purchase {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  margin: 1rem 0;
+}
+
+.offer .time,
+.coupon-code {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.25rem;
+  opacity: 0.5;
+}
+
+.offer .discount-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.btn-offer {
+  background: transparent;
+  color: #1dd100;
+  border: 1px solid #1dd100;
+  padding: 1.25rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
 }
