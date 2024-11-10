@@ -193,9 +193,10 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  padding: 3.25rem;
+  padding: 2.5rem 3.25rem;
   border-radius: 1.5rem;
   text-align: start;
+  position: relative;
 }
 
 .offer__container > div:first-child {
@@ -203,6 +204,10 @@ main {
 }
 .offer__container > div:last-child {
   background-color: #f78c9c;
+}
+
+.offer__container > div > div:nth-child(2) {
+  text-align: center;
 }
 
 .offer .discount {
@@ -233,6 +238,11 @@ main {
   line-height: 3rem;
 }
 
+.offer__container img {
+  position: absolute;
+  right: 200px;
+}
+
 .btn-offer {
   background: transparent;
   color: #1dd100;
@@ -241,4 +251,138 @@ main {
   font-size: 1.25rem;
   font-weight: 700;
   border-radius: 0.75rem;
+}
+
+/* ticket info */
+.ticket-info {
+  border: 1px solid rebeccapurple;
+  /* border-top: 2px solid #1dd100; */
+  margin-top: 5rem;
+  padding: 5rem 5rem 0;
+  background-color: #f7f8f8;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.ticket-info-title {
+  font-family: var(--FF-RALEWAY);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ticket-info-description {
+  font-family: var(--FF-INTER);
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.6;
+  margin: 1rem 0 2rem;
+}
+
+.journey-info-container {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  gap: 6rem;
+  position: relative;
+}
+
+.journey-info-container > img {
+  position: absolute;
+  right: 170px;
+}
+
+.journey-info-container > div:first-child {
+  flex-grow: 2;
+}
+.journey-info-container > div:last-child {
+  flex-grow: 1;
+}
+
+.journey-info-container .container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container-1 > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container-1 h3 {
+  font-family: var(--FF-RALEWAY);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.container-1 .coach {
+  font-family: var(--FF-INTER);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.seats-left-info {
+  background: #1dd10026;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.container-1 .seats-left {
+  color: #1dd100;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--FF-INTER);
+}
+
+.route-info-container {
+  background: #f7f8f8;
+  padding: 1rem 2rem;
+  font-family: var(--FF-RALEWAY);
+  border-radius: 1.5rem;
+}
+
+.route-info-container > div {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  gap: 1rem;
+}
+
+.con-1,
+.con-2 {
+  border-bottom: 1px dashed gray;
+}
+
+.con-3 > p {
+  background: #0307120d;
+  text-align: center;
+  flex-grow: 1;
+  padding: 1rem 0;
+  border-radius: 0.75rem;
+}
+
+.price {
+  text-align: center;
+}
+
+.price h3 {
+  font-family: var(--FF-RALEWAY);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.price p {
+  font-family: var(--FF-RALEWAY);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 40px;
+  opacity: 0.6;
 }
